@@ -16,10 +16,12 @@ class Artist
   end
 
   def print_songs
-    @songs.each{|song| puts song}
+    @songs.each do |song|
+      puts song
+    end
   end
 
-  def self.all?
-    @@all?
+  def self.all
+    @@all
   end
 end
