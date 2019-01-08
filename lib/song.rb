@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist
 
@@ -6,6 +8,7 @@ class Song
   end
 
   def self.new_by_filename(filename)
+    binding.pry
     split_file = filename.split(" - ")
     artist = split_file[0]
     title = split_file[1].delete(".mp3")
