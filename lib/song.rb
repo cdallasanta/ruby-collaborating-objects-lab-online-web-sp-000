@@ -6,7 +6,7 @@ class Song
   end
 
   def self.new_by_filename(filename)
-    split_file = file.split(" - ")
+    split_file = filename.split(" - ")
     artist = split_file[0]
     title = split_file[1].delete(".mp3")
     song = Song.new(title)
