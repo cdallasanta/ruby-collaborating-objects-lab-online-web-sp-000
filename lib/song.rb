@@ -11,8 +11,10 @@ class Song
     binding.pry
     split_file = filename.split(" - ")
     artist = split_file[0]
-    title = split_file[1].delete(".mp3")
+    title = split_file[1]
+    genre = split_file[2].delete(".mp3")
     song = Song.new(title)
     song.artist = artist
+    song.genre = genre
   end
 end
