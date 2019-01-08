@@ -10,10 +10,9 @@ class MP3Importer
   end
 
   def files
-    binding.pry
     fileArray = Dir.entries(@path)
     fileArray.each do |file|
-      if file.ends_with?(".mp3")
+      if file.end_with?(".mp3")
         @files << file
       end
     end
