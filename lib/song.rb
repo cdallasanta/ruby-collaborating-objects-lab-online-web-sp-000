@@ -6,6 +6,7 @@ class Song
   end
 
   def new_by_filename(filename)
-    
+    filename.each do |file|
+      split_file = file.
   end
 end
