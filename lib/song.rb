@@ -9,6 +9,9 @@ class Song
     filename.each do |file|
       split_file = file.split(" - ")
       artist = split_file[0]
-      title = split_file[1]
+      title = split_file[1].delete(".mp3")
+      song = Song.new(title)
+      song.artist = artist
+    end
   end
 end
